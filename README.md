@@ -22,6 +22,9 @@ The names for code have the following formats:
 1. `[datasets]_[model].py` - specify the model architectures
 2. `[datasets]_[model]_train.py` - script to train the corresponding model
 
+# For Usage
+Please check the `[datasets]_[model]_train.py` script to see the details. For both dataset, all the hyper-parameters including latent dimension size, batch size, number of training epochs and etc can be changed easily. The default numbers are used in the paper. One can also change hidden layer sizes or number of hidden layers easily without any compatitable errors for MNIST dataset. However for CelebA dataset, one need to manually change the architectures in `CelebA_[model].py` to make the convolutional layers compatible. 
+
 # Example Images
 ![alt text](CelebA_images.png)
 
